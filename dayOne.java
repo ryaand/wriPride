@@ -1,4 +1,4 @@
-public class studyKasusVariable {
+public class dayOne {
   public static void main(String[] args) {
     int hargaNasiGoreng = 12000;
     int jumlahPorsi = 2;
