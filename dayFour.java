@@ -1,35 +1,25 @@
-import java.util.Scanner;
-
 public class dayFour {
   public static void main(String[] args) {
-    Scanner sc = new Scanner(System.in);
-    System.out.println("=== DAFTAR BUKU ===");
-    String[] daftarBuku = { "Laskar Pelangi", "Bumi Manusia", "Fillosofi Teras", "One Piece" };
-    boolean[] statusBuku = { true, false, true, true };
-    String status = "";
-    int jumlahBuku = 0;
+    // int[] nilaiSiswa = {75, 88, 60, 92, 45};
 
-    for (int i = 0; i < statusBuku.length; i++) {
-      if (statusBuku[i] == true) {
-        status = " - Bisa dipinjam";
-        jumlahBuku++;
-      } else {
-        status = " - Sedang dipinjam orang lain";
-      }
-      System.out.println((i + 1) + ". " + daftarBuku[i] + status);
+    // nilaiSiswa.length =+ 1;
+
+
+
+
+    
+    int banyakNilai = 5;
+    int[] nilaiSiswa = new int[banyakNilai];
+
+    nilaiSiswa[0] = 75;
+    nilaiSiswa[1] = 88;
+    nilaiSiswa[2] = 60;
+    nilaiSiswa[3] = 92;
+    nilaiSiswa[4] = 45;
+    // banyakNilai += 1;
+    // nilaiSiswa[5] = 80;
+    for (int i = 0; i < nilaiSiswa.length; i++) {
+      System.out.println(nilaiSiswa[i]);
     }
-
-    System.out.println("\nJumlah buku yang bisa dipinjam: " + jumlahBuku);
-
-    System.out.print("\nMasukkan nomor buku yang mau dipinjam: ");
-    int angkaInput = sc.nextInt();
-    System.out.println("Buku yang dipiliuh: " + daftarBuku[angkaInput - 1]);
-    if (statusBuku[angkaInput - 1] == true) {
-      status = "Bisa dipinjam";
-    } else {
-      status = "Sedang dipinjam orang lain";
-    }
-    System.out.println("Status: " + status);
-    sc.close();
   }
 }
